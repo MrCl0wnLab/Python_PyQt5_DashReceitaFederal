@@ -16,7 +16,6 @@ Qt Designer is the Qt tool for designing and building graphical user interfaces 
 Qt Designer: https://doc.qt.io/qt-5/qtdesigner-manual.html
 
 
-
 ## Required packages
 ```bash
 $ pip install -r requirements.txt
@@ -100,17 +99,6 @@ def click_button(self,value):
     print('CLICKED',value)
 ```
 
-## Set drop shadow effect
-```python
-self.shadow = self.set_drop_shadow()
-def set_drop_shadow(self):
-    self.shadow = QGraphicsDropShadowEffect(self)
-    self.shadow.setBlurRadius(20)
-    self.shadow.setXOffset(0)
-    self.shadow.setYOffset(0)
-    self.shadow.setColor(QColor(0, 0, 0, 60))
-    return self.shadow
-```
 # My study reference
 - https://www.semicolonworld.com/question/53672/using-lambda-expression-to-connect-slots-in-pyqt
 - https://gis.stackexchange.com/questions/293285/problem-converting-qrc-file-into-py-one-by-pyqt5
